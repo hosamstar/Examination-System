@@ -1,0 +1,21 @@
+mat-toolbar {
+
+    // background: #ffffff;
+    // color: black;
+
+    background: #263238;
+    color: #ffffff;
+    
+}
+
+.right{
+width: 100%;
+display: flex;
+justify-content: right;
+}
+
+.menu-button:hover{
+    background: #fff;
+    border-radius: 5px;
+    color: black;
+}

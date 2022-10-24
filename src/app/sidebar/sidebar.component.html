@@ -1,0 +1,66 @@
+<mat-sidenav-container>
+
+    <app-header [sidenav]="sidenav"></app-header>
+
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+
+        <h2 class="name">Examination Management System</h2>
+
+        <mat-divider></mat-divider>
+        
+        <button mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <span *ngIf="sidenav.opened">Profile</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>dashboard</mat-icon>
+            <span *ngIf="sidenav.opened">Dashboard</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>assignment</mat-icon>
+            <span *ngIf="sidenav.opened">Exams</span>
+        </button>
+        
+        <button mat-button class="menu-button">
+            <mat-icon>assignment</mat-icon>
+            <span *ngIf="sidenav.opened">Question Bank</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>accessibility_new</mat-icon>
+            <span *ngIf="sidenav.opened">Students</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>account_box</mat-icon>
+            <span *ngIf="sidenav.opened">Admins</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>book</mat-icon>
+            <span *ngIf="sidenav.opened">Subjects</span>
+        </button>
+
+        <button mat-button class="menu-button">
+            <mat-icon>assessment</mat-icon>
+            <span *ngIf="sidenav.opened">Roles</span>
+        </button>
+
+
+            <button mat-button class="menu-button">
+                <mat-icon>https</mat-icon>
+                <span *ngIf="sidenav.opened">Change Password</span>
+            </button>
+    
+            <mat-divider></mat-divider>
+    
+            <button mat-button class="menu-button">
+                <mat-icon>help</mat-icon>
+                <span *ngIf="sidenav.opened">Help</span>
+            </button>
+    
+        </mat-sidenav>
+    </mat-sidenav-container>
